@@ -17,7 +17,10 @@ function greeting() {
 
 document.onload = greeting()
 
-square.addEventListener('click', (event) => changeColour('green'));
+square.addEventListener('click', (event) => clicked());
+
+square.addEventListener('mouseover', (event) => changeColour ('gray'));
+square.addEventListener('mouseout', (event) => changeColour ('red'));
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
