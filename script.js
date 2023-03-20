@@ -4,6 +4,14 @@ function changeColour(colour) {
     square.background = colour;
 }
 
+var words = document.getElementById('words');
+
+function greeting() {
+    words.innerHTML = "Welcome to Flatland <br> I am Square!"
+}
+
+document.onload = greeting()
+
 square.addEventListener('click', (event) => changeColour('green'));
 
 function createBuzzwordPhrase() {
