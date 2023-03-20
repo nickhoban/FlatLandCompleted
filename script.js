@@ -4,6 +4,11 @@ function changeColour(colour) {
     square.background = colour;
 }
 
+function clicked() {
+    var msg = "Build a <br>" + createBuzzwordPhrase();
+    words.innerHTML = msg;
+}
+
 var words = document.getElementById('words');
 
 function greeting() {
