@@ -20,7 +20,6 @@ function greeting() {
 document.onload = greeting()
 
 
-
 square.addEventListener('mouseover', (event) => changeColour ('gray'));
 square.addEventListener('mouseout', (event) => changeColour ('red'));
 
