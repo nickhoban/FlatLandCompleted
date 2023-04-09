@@ -4,6 +4,8 @@ function changeColour(colour) {
     square.background = colour;
 }
 
+square.addEventListener('click', (event) => changeColour('green'));
+
 function clicked() {
     var msg = "Build a <br>" + createBuzzwordPhrase();
     words.innerHTML = msg;
@@ -17,7 +19,7 @@ function greeting() {
 
 document.onload = greeting()
 
-square.addEventListener('click', (event) => clicked());
+
 
 square.addEventListener('mouseover', (event) => changeColour ('gray'));
 square.addEventListener('mouseout', (event) => changeColour ('red'));
